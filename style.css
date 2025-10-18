@@ -949,7 +949,7 @@ body {
   letter-spacing: var(--letter-spacing-tight);
   animation: fadeInUp 1s var(--ease-standard) 0.5s both;
   font-family: var(--font-family-base);
-  font-size: 16px !important;    /* Pick your favorite pixel size */
+  font-size: 11px !important;    /* Pick your favorite pixel size */
 }
 
 .hero-cta:hover {
@@ -1550,6 +1550,19 @@ body {
   .instagram-grid {
     grid-template-columns: repeat(3, 1fr);
     max-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-cta-group {
+    flex-direction: column;    /* makes buttons stack vertically */
+    gap: 1rem;                 /* vertical gap between buttons */
+    align-items: center;      /* both buttons fill width if desired */
+  }
+  .hero-cta,
+  .hero-cta.instagram-btn {
+    width: auto;               /* full width buttons on mobile */
+    min-width: unset;              /* override any desktop min-width */
   }
 }
 
