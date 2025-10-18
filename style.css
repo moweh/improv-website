@@ -629,6 +629,24 @@ select.form-control {
     max-width: var(--container-md);
   }
 }
+@media (max-width: 850px) and (orientation: landscape) {
+  .hero-cta-group {
+    flex-direction: row;         /* makes buttons side by side */
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex !important;    /* ensures flex is NOT hidden */
+  }
+  .hero-cta,
+  .hero-cta.instagram-btn {
+    width: auto;
+    min-width: 120px;            /* or whatever matches your button content */
+    display: inline-flex !important; /* ensures button is visible */
+    /* Remove any display: none or width: 0 */
+  }
+}
+
+
 @media (min-width: 1024px) {
   .container {
     max-width: var(--container-lg);
