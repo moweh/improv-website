@@ -921,7 +921,8 @@ body {
 }
 
 .hero-logo {
-  margin-bottom: var(--space-32);
+  /*margin-bottom: var(--space-32);*/
+  margin-bottom: 1rem; /* or var(--space-32) or similar */
 }
 
 .logo-image {
@@ -963,7 +964,7 @@ body {
   gap: 1rem;  /* gap between buttons */
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .hero-cta.instagram-btn {
