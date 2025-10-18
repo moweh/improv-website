@@ -913,7 +913,9 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  z-index: 2;
+  overflow: visible;
   background-image: url('group-photo.jpg');
   background-size: cover;
   background-position: center;
@@ -1122,6 +1124,9 @@ body {
 .shows {
   padding: var(--space-32) 0;
   background: var(--color-background);
+  margin-top: 2rem; /* or increase to 5rem if hero is taller on mobile/landscape */
+  position: relative;
+  z-index: 1;
 }
 
 .shows-grid {
