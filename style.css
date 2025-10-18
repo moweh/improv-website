@@ -797,14 +797,14 @@ body {
 
 
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   background: rgba(var(--color-background), 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  transition: all var(--duration-normal) var(--ease-standard);
+  transition: none;
   border-bottom: 1px solid var(--color-border);
 }
 
