@@ -949,6 +949,7 @@ body {
   letter-spacing: var(--letter-spacing-tight);
   animation: fadeInUp 1s var(--ease-standard) 0.5s both;
   font-family: var(--font-family-base);
+  font-size: 16px !important;    /* Pick your favorite pixel size */
 }
 
 .hero-cta:hover {
@@ -959,8 +960,9 @@ body {
 
 .hero-cta-group {
   display: flex;
-  gap: 1rem;
+  gap: 1rem;  /* gap between buttons */
   justify-content: center;
+  align-items: center;
   margin-top: 2rem;
 }
 
@@ -976,10 +978,19 @@ body {
 
 .hero-cta,
 .hero-cta.instagram-btn {
-  width: 200px;    /* Try 160px, 180px, or 200px based on your text length */
-  min-width: 0;
+  /*width: 200px;    /* Try 160px, 180px, or 200px based on your text length */
+  /*min-width: 0;
   max-width: 100%;
-  justify-content: center;
+  justify-content: center;*/
+  display: inline-flex;         /* aligns content and icons center */
+  align-items: center;          /* vertical alignment of text and icon */
+  justify-content: center;      /* horizontal center for button content */
+  height: 48px;                 /* pick a value (e.g. 48px, 50px) */
+  min-width: 180px;             /* ensures enough width for both buttons */
+  font-size: 1.1rem;            /* make the font size the same for both */
+  border-radius: 24px;          /* perfectly rounded, or match your style */
+  padding: 0 32px;              /* consistent horizontal padding */
+  box-sizing: border-box;
 }
 
 
@@ -1288,8 +1299,12 @@ body {
 .contact-item {
   display: flex;
   align-items: center;
-  margin-bottom: 1.2em;
+  margin-bottom: 0.2em !important;
   font-size: 1.25rem;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0 !important; /* Removes margin below Instagram so it doesn't add space after */
 }
 
 .contact-icon {
