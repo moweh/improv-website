@@ -278,15 +278,18 @@
       <textarea id="message" name="message" rows="5" required></textarea>
     </div>
 
-    <!-- Honeypot field to catch bots -->
+    <!-- Hidden honeypot to reduce spam -->
     <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+    <!-- Optional hidden subject for your inbox -->
+    <input type="hidden" name="_subject" value="New message from improv.ae">
 
     <button type="submit" class="form-submit">Send Message</button>
   </form>
 
-  <!-- Status text -->
   <p id="form-status" aria-live="polite" style="margin-top:.5rem;"></p>
 </div>
+
 
             </div>
         </div>
